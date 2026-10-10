@@ -1,0 +1,6 @@
+{
+  "name": "Napoleonic Line Infantry Memory Game",
+  "description": "A 4x4 pixel-art memory game featuring Napoleonic-era line infantry regiments, historical fun facts, timer, and move tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

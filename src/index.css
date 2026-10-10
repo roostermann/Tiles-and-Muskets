@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-pixel {
+    font-family: 'Silkscreen', 'Press Start 2P', monospace;
+  }
+  .font-cinzel {
+    font-family: 'Cinzel', serif;
+  }
+  .pixelated {
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+  }
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+  .transform-style-preserve-3d {
+    transform-style: preserve-3d;
+  }
+  .backface-hidden {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+}
+
+/* Custom retro pixel frame box-shadow */
+.pixel-box {
+  box-shadow: 
+    0 -3px 0 0 #292524,
+    3px 0 0 0 #292524,
+    0 3px 0 0 #0c0a09,
+    -3px 0 0 0 #292524,
+    0 0 0 3px #1c1917;
+}
+
+.pixel-btn {
+  box-shadow: 0 4px 0 0 #1c1917;
+  transition: transform 0.08s ease, box-shadow 0.08s ease;
+}
+.pixel-btn:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 0 #1c1917;
+}
